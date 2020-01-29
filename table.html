@@ -3,6 +3,35 @@
 	<head>
 		<title>tableaux</title>
 		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="tableau.css">
+		<style>
+			caption{
+					font-size: 2.5em;
+					margin-bottom: 10px;
+					color: rgb(231,79,49);
+				}
+
+			table, th, td{
+				text-align: center;
+				border: solid 1px black;
+				border-collapse: collapse;
+				padding: 20px 5px;
+				font-family: tahoma,verdana, sans sérif;
+				color: rgb(7,180,151);
+				background-color: rgba(205,205,205,0.4);
+				/*letter-spacing: 0.1em;*/
+				}
+
+			table{
+				height: 200px;
+				width: 50%;
+				margin: 20px auto 0; 
+				}
+
+			.col,.row{
+				color: rgb(0,0,0);
+				}
+		</style>
 	</head>
 	<body>
 		<table>
@@ -20,7 +49,7 @@
 	        </thead>
 	        <tbody>
 		        <tr>
-		        	<td>8H-12H</td>
+		        	<th>8H-12H</th>
 		        	<td>&nbsp</td>
 		        	<td>&nbsp</td>
 		        	<td>&nbsp</td>
@@ -30,17 +59,17 @@
 		        </tr>
 		        
 		        <tr>
-		        	<td>12H-13H</td>
-		        	<td colspan="5">Pause</td>
+		        	<th>12H-13H</th>
+		        	<td class="col" colspan="5">Pause</td>
 		        </tr>
 		        <tr>
-		        	<td>13H-18H</td>
+		        	<th>13H-18H</th>
 		        	<td>&nbsp</td>
 		        	<td>&nbsp</td>
 		        	<td>&nbsp</td>
 		        	<td>&nbsp</td>
 		        	<td>&nbsp</td>
-		        	<td>Bonne année</td>
+		        	<td class="row">Bonne année</td>
 		        </tr>
 	        </tbody>
 	        <tfoot>
